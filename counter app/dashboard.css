@@ -1,0 +1,31 @@
+body {
+    background-image: linear-gradient(to top, rgba(145, 195, 241, 0.6), rgba(145, 198, 241, 0.6)), url("img-5.jpg");
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-container {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.error-message {
+    color: red;
+}

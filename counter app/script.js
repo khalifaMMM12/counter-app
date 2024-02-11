@@ -25,3 +25,35 @@ function save(){
   countEL.innerText = 0
   count = 0
 }
+
+// to save count
+
+function save() {
+  document.getElementById('saveForm').style.display = 'block';
+}
+
+function submitSaveForm() {
+  var count = document.getElementById('Counter').innerText;
+  var countName = document.getElementById('countName').value;
+
+  document.getElementById('savedCount').value = count;
+  document.getElementById('savedCountName').value = countName;
+
+  document.getElementById('saveFormSubmit').click();
+
+  displaySaveMessage("Saving count...");
+
+  document.getElementById('saveForm').style.display = 'none';
+}
+
+// Display success or error message
+function displaySaveMessage(message) {
+  var saveMessage = document.getElementById('saveMessage');
+  saveMessage.innerHTML = "<p>" + message + "</p>";
+  setTimeout(function() {
+      saveMessage.innerHTML = "";
+  }, 3000);  
+}
+
+displayMessageFromQuery();
+
